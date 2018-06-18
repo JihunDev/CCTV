@@ -1,4 +1,8 @@
-# BBB-mjpg-streamer
+# CCTV
+
+개인 프로젝트로 진행한 BeagleBoneBlack을 이용한 CCTV
+
+
 
 ## About Project
 
@@ -6,7 +10,12 @@
 
 
 
-## installing
+## Getting Start
+
+### Requirements
+
+- BeagleBoneBlack
+- USB 웹캠
 
 ### Download
 
@@ -16,6 +25,8 @@ $ opkg upgrade
 $ opkg install python python-modules python-pyserial python-numpy python-setuptools python-misc python-pip git
 ```
 
+
+
 ### ffmpeg-dev
 
 - 오픈소스 영상 인코딩 라이브러리
@@ -24,6 +35,8 @@ $ opkg install python python-modules python-pyserial python-numpy python-setupto
 $ opkg install  ffmpeg-dev 
 ```
 
+
+
 ### opencv
 
 - 실시간 이미지 프로세싱에 중점 라이브러리
@@ -31,6 +44,8 @@ $ opkg install  ffmpeg-dev
 ```shell
 $ opkg install opencv
 ```
+
+
 
 ### Svn 
 
@@ -55,7 +70,7 @@ $ make
 
 
 
-## Getting Start
+### Usage
 
 ```shell
 $ ./mjpg_streamer -i "./input_uvc.so" -o "./output_http.so -p 8080 -w ./www"
@@ -65,4 +80,4 @@ $ ./mjpg_streamer -i "./input_uvc.so" -o "./output_http.so -p 8080 -w ./www"
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md) file for details.
